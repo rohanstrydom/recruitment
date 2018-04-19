@@ -3,10 +3,10 @@
 // save cell phone number
 function candidate_save_phone_number(){
 
-    $phone_number = $_POST['phone_number'];
-    $position_code = $_POST['position_code'];
-    //$phone_number = '0823749048';
-    //$position_code = '0DIGB0E020180413';
+    //$phone_number = $_POST['phone_number'];
+    //$position_code = $_POST['position_code'];
+    $phone_number = '0823749048';
+    $position_code = '0DIGB0E020180413';
     $position_object = get_page_by_title( $position_code, OBJECT, 'position' );
     
     //print_r($position_object);

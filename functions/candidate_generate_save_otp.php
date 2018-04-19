@@ -4,10 +4,10 @@
 function candidate_generate_save_otp(){
 
     // we need the phone number of the candidate, as well as the position being applied for.
-    $phone_number = $_POST['phone_number'];
-    $position_code = $_POST['position_code'];
-    //$phone_number = '0823749048';
-    //$position_code = '0DIGB0E020180413';
+    //$phone_number = $_POST['phone_number'];
+    //$position_code = $_POST['position_code'];
+    $phone_number = '0823749048';
+    $position_code = '0DIGB0E020180413';
 
     $otp = generate_otp();
     // get the Candidate post ID
