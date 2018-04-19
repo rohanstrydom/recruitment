@@ -1,7 +1,7 @@
 <?php
 
     // get the value of the otp received
-    function candidate_check_otp(){
+    function candidate_check_otp(){ 
 
         $phone_number = $_POST['phone_number'];
         $position_code = $_POST['position_code'];
