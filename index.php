@@ -10,6 +10,6 @@ License: GNU General Public License
 
 // candidate_generate_save_otp(); // working
 
-// candidate_check_otp();  // working
+candidate_check_otp();  // working
 
 ?>
