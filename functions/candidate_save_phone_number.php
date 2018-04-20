@@ -7,6 +7,7 @@ function candidate_save_phone_number(){
     $position_code = $_POST['position_code'];
     //$phone_number = '0823749048';
     //$position_code = '0DIGB0E020180413';
+    
     $position_object = get_page_by_title( $position_code, OBJECT, 'position' );
     
     //print_r($position_object);
@@ -27,7 +28,7 @@ function candidate_save_phone_number(){
         
             add_position_to_candidate($candidate->ID, $position_code, $position_name);
                 
-            return 'rohan';
+            return true;
             // do nothing, as we already have the number                
     }
     else // Candidate don't exist, so create him/her
@@ -47,15 +48,8 @@ function candidate_save_phone_number(){
 
         add_position_to_candidate($candidate, $position_code, $position_name);
 
-        //if (is_wp_error($post_return)){
-       
-            //return 'rohan';
-            //return $result->get_error_message();
-    
-        //}
-        //else {
-            //return 'rohan';
-        //}
+        return false;
+        
     }
 
 };
@@ -71,8 +65,7 @@ function add_position_to_candidate($candidate_id, $position_code, $position_name
 
     $row = array(
         'position_name'	=> $position_name.' - '.$position->post_title,
-        'position'	=> $position,
-        'answer_1'	=> 'here'
+        'position'	=> $position
     );
 
     add_row( 'positions_applied', $row, $candidate_id );

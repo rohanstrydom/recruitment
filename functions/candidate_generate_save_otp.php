@@ -45,12 +45,12 @@ function candidate_generate_save_otp(){
                     if ($update_row_success == true){
                         
                         echo 'success';
-                        return 'success';
+                        return true;
                     }
                     else {
                         
                         echo 'fail';
-                        return 'fail';
+                        return false;
 
                     }
                 }
