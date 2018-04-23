@@ -7,8 +7,8 @@ include('functions/candidate_save_detail.php');
 include('functions/candidate_generate_save_otp.php');
 include('functions/candidate_save_phone_number.php');
 include('functions/candidate_save_answer_one.php');
-include('functions/candidate_save_answer_second.php');
-include('functions/candidate_save_answer_third.php');
+include('functions/candidate_save_answer_two.php');
+include('functions/candidate_save_answer_three.php');
 include('functions/candidate_set_post_title.php');
 include('functions/position_set_title.php');
 

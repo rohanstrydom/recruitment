@@ -12,4 +12,12 @@ License: GNU General Public License
 
 // candidate_check_otp();  // working
 
+// candidate_save_detail();
+
+// candidate_save_answer_one();
+
+// candidate_save_answer_two();
+
+candidate_save_answer_three();
+
 ?>

@@ -1,15 +1,15 @@
 <?php
 
-    // answer to the first question
-    function candidate_save_answer_one(){
+    // answer to the third question
+    function candidate_save_answer_three(){
         
         $phone_number = $_POST['phone_number'];
         $position_code = $_POST['position_code'];
-        $answer_one = $_POST['answer_one'];
+        $answer_three = $_POST['answer_three'];
 
         // $phone_number = '0823749048';
         // $position_code = '0DIGB0E020180413';
-        // $answer_one = 'This is my demo answer for the first question';
+        // $answer_three = 'This is my demo answer for the third question';
 
         // get the candidate
         $candidate = get_page_by_title( $phone_number, OBJECT, 'candidate' );
@@ -26,7 +26,7 @@
         
                     if (get_sub_field('position')->post_title == $position_code){
                         
-                        update_sub_field('answer_one', $answer_one);
+                        update_sub_field('answer_three', $answer_three);
 
                         return (true);
 
