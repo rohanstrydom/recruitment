@@ -18,6 +18,10 @@ License: GNU General Public License
 
 // candidate_save_answer_two();
 
-candidate_save_answer_three();
+// candidate_save_answer_three();
+
+// position_retrieve_intro_message();
+
+position_retrieve_openings();
 
 ?>
