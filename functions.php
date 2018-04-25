@@ -11,6 +11,8 @@ include('functions/candidate_save_answer_two.php');
 include('functions/candidate_save_answer_three.php');
 include('functions/candidate_set_post_title.php');
 include('functions/position_set_title.php');
+include('functions/position_retrieve_intro_message.php');
+include('functions/position_retrieve_openings.php');
 
 // Set position post title to random+date
 add_action( 'edit_form_after_title', 'position_set_title' ); // Set the post title for Position posts
@@ -38,5 +40,11 @@ add_action('wp_ajax_nopriv_candidate_save_answer_two', 'candidate_save_answer_tw
 
 add_action('wp_ajax_candidate_save_answer_three', 'candidate_save_answer_three');// for users who are logged in
 add_action('wp_ajax_nopriv_candidate_save_answer_three', 'candidate_save_answer_three');//for users that are not logged in.
+
+add_action('wp_ajax_position_retrieve_intro_message', 'position_retrieve_intro_message');// for users who are logged in
+add_action('wp_ajax_nopriv_position_retrieve_intro_message', 'position_retrieve_intro_message');//for users that are not logged in.
+
+add_action('wp_ajax_position_retrieve_openings', 'position_retrieve_openings');// for users who are logged in
+add_action('wp_ajax_nopriv_position_retrieve_openings', 'position_retrieve_openings');//for users that are not logged in.
 
 ?>
