@@ -36,8 +36,7 @@ function candidate_generate_save_otp(){
 
                     $new_row_value = array(
                         'otp'	=> $otp,
-                        'alt'	=> 'Another great sunset',
-                        'link'	=> 'http://website.com'
+                        'accepted'  => 'not-set'
                     );
 
                     $update_row_success = update_row( 'positions_applied', $current_position_index, $new_row_value, $candidate->ID );
