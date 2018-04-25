@@ -13,6 +13,7 @@ include('functions/candidate_set_post_title.php');
 include('functions/position_set_title.php');
 include('functions/position_retrieve_intro_message.php');
 include('functions/position_retrieve_openings.php');
+include('functions/position_get_all_candidates.php');
 
 // Set position post title to random+date
 add_action( 'edit_form_after_title', 'position_set_title' ); // Set the post title for Position posts
@@ -46,5 +47,8 @@ add_action('wp_ajax_nopriv_position_retrieve_intro_message', 'position_retrieve_
 
 add_action('wp_ajax_position_retrieve_openings', 'position_retrieve_openings');// for users who are logged in
 add_action('wp_ajax_nopriv_position_retrieve_openings', 'position_retrieve_openings');//for users that are not logged in.
+
+add_action('wp_ajax_position_get_all_candidates', 'position_get_all_candidates');// for users who are logged in
+add_action('wp_ajax_nopriv_position_get_all_candidates', 'position_get_all_candidates');//for users that are not logged in.
 
 ?>
