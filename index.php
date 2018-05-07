@@ -24,6 +24,8 @@ License: GNU General Public License
 
 // position_retrieve_openings();
 
-position_get_all_candidates();
+// position_get_all_candidates();
+
+candidate_retrieve_position_answers();
 
 ?>
